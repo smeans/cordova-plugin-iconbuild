@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-iconbuild" version="0.0.1">
+    <name>IconBuild</name>
+    <description>A build plugin that creates application icons from a single SVG source file.</description>
+    <author>Scott Means</author>
+    <license>MIT</license>
+    <keywords>cordova,android,ios,icon,appicon</keywords>
+
+    <repo>https://github.com/smeans/cordova-plugin-iconbuild.git</repo>
+    <issue>https://github.com/smeans/cordova-plugin-iconbuild/issues</issue>
+
+    <engines>
+        <engine name="cordova" version="&gt;=3.0.0" />
+    </engines>
+
+    <hook type="before_build" src="src/hooks/build-icons.js"/>
+</plugin>
